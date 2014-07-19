@@ -1,0 +1,14 @@
+{
+    "name": "esmongoscheduler"
+    , "description": "esearch scheduler"
+    , "version": "0.0.1"
+    , "private": true
+    , "main": "server.js"
+    , "dependencies":
+    {
+        "cron": "1.0.x"
+        , "request" : "2.36.x"
+        , "mongodb" : "1.4.x"
+    }
+    , "author": "Terry Lin"
+}

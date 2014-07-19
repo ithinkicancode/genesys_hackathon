@@ -1,0 +1,31 @@
+<head>
+  <title>Tech Support Monitor</title>
+</head>
+
+<body>
+  <div id="outer">
+    {{> monitor}}
+  </div>
+</body>
+
+<template name="monitor">
+  <div class="monitor">
+     {{> top}}
+    {{#each terms}}
+      {{> term}}
+    {{/each}}
+  </div>
+</template>
+<template name="term">
+  <div class="term {{selected}}">
+    <span class="name">{{term}}</span>
+    <span class="score">{{count}}</span>
+  </div>
+</template>
+<template name="top">
+  <div class="term {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}}</span>
+  </div>
+</template>
+
